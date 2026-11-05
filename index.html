@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Михаил — «Рычаг», ИИ для бизнеса</title>
+<meta name="description" content="«Рычаг» — Михаил + ИИ. Телефон +7 902 413-42-44">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#0f0f10;--card:#1a1a1c;--fg:#f4f1ec;--muted:#a9a49c;--acc:#ff6a1a;--line:#2b2b2e}
+@media (prefers-color-scheme:light){:root{--bg:#f6f3ee;--card:#fff;--fg:#17140f;--muted:#6b645a;--line:#e4ddd2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+main{width:100%;max-width:420px}
+.brand{font-weight:800;letter-spacing:.02em;color:var(--acc);font-size:15px;text-transform:uppercase}
+h1{font-size:26px;line-height:1.2;margin:6px 0 4px}
+.phone{font-size:30px;font-weight:800;letter-spacing:.01em;margin:4px 0 20px;font-variant-numeric:tabular-nums}
+a.btn,button.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;
+margin:0 0 12px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--fg);
+font:600 18px/1.2 inherit;text-decoration:none;cursor:pointer;padding:0 16px}
+a.btn.main{background:var(--acc);border-color:var(--acc);color:#fff;font-size:20px;min-height:66px}
+.btn:active{transform:scale(.98)}
+p.note{color:var(--muted);font-size:15px;margin:18px 0 0}
+#ok{color:var(--acc);font-size:15px;min-height:20px;margin:-4px 0 8px;text-align:center}
+</style></head>
+<body><main>
+<div class="brand">«Рычаг» — Михаил + ИИ</div>
+<h1>Связаться с Михаилом</h1>
+<div class="phone">+7 902 413-42-44</div>
+<a class="btn main" href="tel:+79024134244">📞 Позвонить</a>
+<a class="btn" href="sms:+79024134244?&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%21%20%D0%AF%20%D0%BF%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%20%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D0%A8%D1%82%D0%B0%D0%B1%20%E2%80%94%20%D1%85%D0%BE%D1%87%D1%83%20%D1%82%D0%B0%D0%BA%20%D0%B6%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0.">💬 Написать СМС</a>
+<a class="btn" href="https://t.me/+79024134244?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%21%20%D0%AF%20%D0%BF%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%20%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D0%A8%D1%82%D0%B0%D0%B1%20%E2%80%94%20%D1%85%D0%BE%D1%87%D1%83%20%D1%82%D0%B0%D0%BA%20%D0%B6%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0.">✈️ Написать в Telegram</a>
+<button class="btn" type="button" onclick="copyPhone()">📋 Скопировать номер</button>
+<div id="ok" aria-live="polite"></div>
+<p class="note">ИИ за сутки разбирает бизнес: отзывы, конкурентов, карточки на картах — и показывает, где уходят клиенты и что исправить без вложений.</p>
+</main>
+<script>
+function copyPhone(){var t="+79024134244",ok=document.getElementById("ok");
+function done(){ok.textContent="Номер скопирован"}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fb)}else fb();
+function fb(){var i=document.createElement("input");i.value=t;document.body.appendChild(i);i.select();
+try{document.execCommand("copy");done()}catch(e){ok.textContent=t}i.remove()}}
+var q=location.search.slice(1).split("&")[0],T={call:"tel:+79024134244",sms:"sms:+79024134244?&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%21%20%D0%AF%20%D0%BF%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%20%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D0%A8%D1%82%D0%B0%D0%B1%20%E2%80%94%20%D1%85%D0%BE%D1%87%D1%83%20%D1%82%D0%B0%D0%BA%20%D0%B6%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0."},H={call:"Позвонить Михаилу",sms:"Написать СМС Михаилу"};
+if(T[q]){document.title=H[q]+" — «Рычаг»";document.querySelector("h1").textContent=H[q];
+var b=document.querySelectorAll("a.btn");for(var k=0;k<b.length;k++){b[k].classList.remove("main");
+if(b[k].getAttribute("href")===T[q]){b[k].classList.add("main");b[k].parentNode.insertBefore(b[k],b[0])}}
+setTimeout(function(){location.href=T[q]},350)}
+</script>
+</body></html>
